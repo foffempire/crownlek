@@ -1,0 +1,182 @@
+@import 'tailwindcss';
+
+@theme {
+  /* ---------------------------------------------------------------
+     Brand palette
+     --------------------------------------------------------------- */
+  --color-primary: #5d092a;
+  --color-primary-dark: #26030f;
+  --color-burgundy: #3d061b;
+  --color-cream: #faf7f2;
+  --color-beige: #f3eee7;
+  --color-gold: #c9a227;
+  --color-ink: #1a1a1a;
+  --color-muted: #6b6b6b;
+  --color-line: #e5ded5;
+
+  /* ---------------------------------------------------------------
+     Typography
+     --------------------------------------------------------------- */
+  --font-display: 'Cormorant Garamond', ui-serif, Georgia, serif;
+  --font-sans: 'Jost', ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  /* ---------------------------------------------------------------
+     Motion
+     --------------------------------------------------------------- */
+  --ease-brand: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --animate-fade-in: fade-in 0.6s var(--ease-brand) both;
+  --animate-fade-up: fade-up 0.7s var(--ease-brand) both;
+  --animate-drawer-in: drawer-in 0.35s var(--ease-brand) both;
+  --animate-scale-in: scale-in 0.3s var(--ease-brand) both;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes drawer-in {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes scale-in {
+    from {
+      opacity: 0;
+      transform: scale(0.97);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    border-color: var(--color-line);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-weight: 300;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+  }
+
+  /* Visible, on-brand focus ring for keyboard users */
+  :focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background-color: var(--color-primary);
+    color: var(--color-cream);
+  }
+
+  /*
+   * Grids default to a single column that may only be as narrow as their
+   * content needs, which forces horizontal overflow on small screens. Giving
+   * every grid a shrinkable starter column — overridden by any `grid-cols-*`
+   * utility — keeps layouts inside the viewport at every breakpoint.
+   */
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .grid > * {
+    min-width: 0;
+  }
+}
+
+@layer components {
+  /* Editorial eyebrow / kicker text used above section titles */
+  .eyebrow {
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+  }
+}
+
+@utility container-brand {
+  width: 100%;
+  margin-inline: auto;
+  max-width: 88rem;
+  padding-inline: 1.25rem;
+  @media (width >= 48rem) {
+    padding-inline: 2rem;
+  }
+  @media (width >= 80rem) {
+    padding-inline: 3rem;
+  }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Subtle scrollbar so drawers/modals feel premium */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-beige);
+}
+::-webkit-scrollbar-thumb {
+  background: #cbbfae;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
