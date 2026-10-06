@@ -13,19 +13,19 @@ export const site = {
   announcementSecondary: 'Worldwide shipping available',
 
   contact: {
-    phone: '+234 803 000 0000',
-    phoneHref: 'tel:+2348030000000',
-    whatsapp: '2348030000000',
-    email: 'hello@crownlek.com',
-    emailHref: 'mailto:hello@crownlek.com',
-    addressLines: ['14 Adeola Odeku Street', 'Victoria Island, Lagos', 'Nigeria'],
+    phone: '+234 802 322 3713',
+    phoneHref: 'tel:+2348023223713',
+    whatsapp: '2348023223713',
+    email: 'connect@crownlek.com',
+    emailHref: 'mailto:connect@crownlek.com',
+    addressLines: ['Crownlek Suite', '82 Rose Park LSDPC Medium Estate', 'Phase 4, Oba Ogunji Road, Ogba', 'Lagos, Nigeria'],
     hours: 'Mon – Sat, 9:00am – 6:00pm WAT',
   },
 
   socials: [
-    { label: 'Instagram', href: 'https://instagram.com', handle: '@crownlek' },
-    { label: 'Facebook', href: 'https://facebook.com', handle: '/crownlek' },
-    { label: 'TikTok', href: 'https://tiktok.com', handle: '@crownlek' },
+    { label: 'Instagram', href: 'https://www.instagram.com/crownlek/', handle: '@crownlek' },
+    { label: 'Facebook', href: 'https://www.facebook.com/Crownlek', handle: '/crownlek' },
+    { label: 'TikTok', href: 'http://tiktok.com/@crownlek64', handle: '@crownlek64' },
   ],
 
   instagramHandle: '@crownlek',

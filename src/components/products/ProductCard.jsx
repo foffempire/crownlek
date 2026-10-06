@@ -19,7 +19,8 @@ export default function ProductCard({ product, onQuickView, priority = false, cl
     <article className={cn('group relative flex flex-col', className)}>
       <div className="relative overflow-hidden bg-beige">
         <Link
-          to={`/product/${product.slug}`}
+          // to={`/product/${product.slug}`}
+          to="#"
           className="block"
           aria-label={`View ${product.name}`}
           tabIndex={-1}
@@ -35,14 +36,14 @@ export default function ProductCard({ product, onQuickView, priority = false, cl
         </Link>
 
         {/* Status badges */}
-        <div className="pointer-events-none absolute top-3 left-3 flex flex-col items-start gap-2">
+        {/* <div className="pointer-events-none absolute top-3 left-3 flex flex-col items-start gap-2">
           {product.newArrival ? <Badge variant="light">New</Badge> : null}
           {product.featured && !product.newArrival ? <Badge variant="light">Featured</Badge> : null}
           {discounted ? <Badge variant="gold">Sale</Badge> : null}
-        </div>
+        </div> */}
 
         {/* Wishlist */}
-        <button
+        {/* <button
           type="button"
           onClick={() => toggleWishlist(product.id)}
           aria-label={saved ? `Remove ${product.name} from wishlist` : `Save ${product.name} to wishlist`}
@@ -53,10 +54,10 @@ export default function ProductCard({ product, onQuickView, priority = false, cl
           )}
         >
           <Heart size={15} strokeWidth={1.5} fill={saved ? 'currentColor' : 'none'} aria-hidden="true" />
-        </button>
+        </button> */}
 
         {/* Hover actions */}
-        <div className="pointer-events-none absolute inset-x-3 bottom-3 flex flex-col gap-2 opacity-0 transition-opacity duration-400 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100 max-lg:hidden">
+        {/* <div className="pointer-events-none absolute inset-x-3 bottom-3 flex flex-col gap-2 opacity-0 transition-opacity duration-400 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100 max-lg:hidden">
           <button
             type="button"
             onClick={() => addItem(product)}
@@ -75,12 +76,12 @@ export default function ProductCard({ product, onQuickView, priority = false, cl
               Quick view
             </button>
           ) : null}
-        </div>
+        </div> */}
       </div>
 
       {/* Details */}
       <div className="flex flex-1 flex-col pt-5">
-        <p className="text-[0.65rem] tracking-[0.2em] text-muted uppercase">{product.category}</p>
+        {/* <p className="text-[0.65rem] tracking-[0.2em] text-muted uppercase">{product.category}</p>
 
         <h3 className="mt-2 font-display text-xl leading-snug text-ink">
           <Link
@@ -102,10 +103,10 @@ export default function ProductCard({ product, onQuickView, priority = false, cl
               {formatPrice(product.compareAtPrice)}
             </p>
           ) : null}
-        </div>
+        </div> */}
 
         {/* Touch devices get an always-visible action */}
-        <div className="mt-4 flex gap-2 lg:hidden">
+        {/* <div className="mt-4 flex gap-2 lg:hidden">
           <button
             type="button"
             onClick={() => addItem(product)}
@@ -124,7 +125,7 @@ export default function ProductCard({ product, onQuickView, priority = false, cl
               <Eye size={15} strokeWidth={1.5} aria-hidden="true" />
             </button>
           ) : null}
-        </div>
+        </div> */}
       </div>
     </article>
   )

@@ -34,7 +34,7 @@ export default function Navbar({ transparent = false, onOpenMenu, onOpenSearch }
         solid ? 'border-b border-line bg-cream/95 backdrop-blur-md' : 'border-b border-transparent',
       )}
     >
-      <AnnouncementBar collapsed={scrolled} />
+      {/* <AnnouncementBar collapsed={scrolled} /> */}
 
       <div className="container-brand relative flex h-16 items-center justify-between gap-4 lg:h-20">
         {/* Brand */}
@@ -125,7 +125,7 @@ export default function Navbar({ transparent = false, onOpenMenu, onOpenSearch }
 
         {/* Utilities */}
         <div className={cn('flex items-center gap-1 sm:gap-2', onDark ? 'text-cream' : 'text-ink')}>
-          <button
+          {/* <button
             type="button"
             onClick={onOpenSearch}
             aria-label="Search products"
@@ -135,9 +135,9 @@ export default function Navbar({ transparent = false, onOpenMenu, onOpenSearch }
             )}
           >
             <Search size={18} strokeWidth={1.5} aria-hidden="true" />
-          </button>
+          </button> */}
 
-          <Link
+          {/* <Link
             to="/shop"
             aria-label={`Wishlist, ${wishlist.length} saved`}
             className={cn(
@@ -149,9 +149,9 @@ export default function Navbar({ transparent = false, onOpenMenu, onOpenSearch }
             {wishlist.length > 0 ? (
               <span className="absolute top-1.5 right-1.5 size-1.5 rounded-full bg-gold" aria-hidden="true" />
             ) : null}
-          </Link>
+          </Link> */}
 
-          <button
+          {/* <button
             type="button"
             onClick={openDrawer}
             aria-label={`Open bag, ${itemCount} item${itemCount === 1 ? '' : 's'}`}
@@ -174,7 +174,7 @@ export default function Navbar({ transparent = false, onOpenMenu, onOpenSearch }
             >
               {itemCount}
             </span>
-          </button>
+          </button> */}
 
           <button
             type="button"

@@ -2,7 +2,7 @@
 
 export const mainNav = [
   { label: 'Home', to: '/' },
-  { label: 'Shop', to: '/shop' },
+  // { label: 'Shop', to: '/shop' },
   { label: 'Collections', to: '/collections' },
   { label: 'Lookbook', to: '/lookbook' },
   { label: 'About', to: '/about' },
@@ -11,7 +11,7 @@ export const mainNav = [
 ]
 
 export const footerShopLinks = [
-  { label: 'Shop', to: '/shop' },
+  // { label: 'Shop', to: '/shop' },
   { label: 'Collections', to: '/collections' },
   { label: 'Lookbook', to: '/lookbook' },
   { label: 'About', to: '/about' },

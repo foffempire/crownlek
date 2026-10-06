@@ -40,6 +40,7 @@ export const PHOTO = {
   agbadaEmerald: 'crownlek_86.webp',
   agbadaGold: 'crownlek_75.webp',
   agbadaBlue: 'crownlek_65.webp',
+  agbadaCouple: 'crownlek_120.webp',
 
   /* Senator & suits */
   senatorBlack: 'crownlek_118.webp',
@@ -93,4 +94,10 @@ export const PHOTO = {
   sewingWork: 'crownlek_81.webp',
   sewingGreen: 'crownlek_82.webp',
   atelierTable: 'crownlek_106.webp',
+
+  // others
+  tradefair: 'crownlek_113.webp',
+  calabarCarnival: 'crownlek_119.webp',
+  africanMenWhite: 'crownlek_121.webp',
+  africanMenBlue: 'crownlek_122.webp',
 }

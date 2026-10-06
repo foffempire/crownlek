@@ -168,9 +168,9 @@ export default function Services() {
               <Button to="/contact" size="lg">
                 Contact us
               </Button>
-              <Button to="/shop" variant="outline" size="lg">
+              {/* <Button to="/shop" variant="outline" size="lg">
                 Shop ready-to-wear
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

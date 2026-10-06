@@ -168,10 +168,10 @@ export default function About() {
       <section className="bg-cream py-20 sm:py-28">
         <div className="container-brand">
           <SectionTitle
-            eyebrow="The people"
-            title="Behind the atelier"
+            eyebrow="Crownlek"
+            title="African fashion obsession"
             align="center"
-            description="A small team, deliberately. Everyone who touches your garment is named here."
+            description="The vibrant prints and gorgeous styles of africa fashion have captured our hearts."
           />
 
           <ul className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
@@ -186,11 +186,11 @@ export default function About() {
                     className="w-full"
                     sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                   />
-                  <h3 className="mt-6 font-display text-2xl text-ink">{member.name}</h3>
+                  {/* <h3 className="mt-6 font-display text-2xl text-ink">{member.name}</h3>
                   <p className="mt-1 text-[0.65rem] tracking-[0.2em] text-gold uppercase">
                     {member.role}
                   </p>
-                  <p className="mt-3 text-sm leading-relaxed text-muted">{member.bio}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-muted">{member.bio}</p> */}
                 </Reveal>
               </li>
             ))}

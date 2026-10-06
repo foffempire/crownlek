@@ -162,7 +162,7 @@ export default function Contact() {
             </div>
 
             {/* Form */}
-            <div className="border border-line bg-beige/40 p-7 sm:p-9">
+            {/* <div className="border border-line bg-beige/40 p-7 sm:p-9">
               {submitted ? (
                 <div className="flex flex-col items-center py-14 text-center" role="status">
                   <span className="flex size-14 items-center justify-center rounded-full border border-gold text-gold">
@@ -252,7 +252,7 @@ export default function Contact() {
                   </Button>
                 </form>
               )}
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

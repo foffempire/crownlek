@@ -24,7 +24,7 @@ export default function Home() {
       <BrandStory />
       <WhyChooseUs />
       <LookbookPreview />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <InstagramGallery />
       <Newsletter />
     </>
