@@ -4,8 +4,10 @@
   /* ---------------------------------------------------------------
      Brand palette
      --------------------------------------------------------------- */
-  --color-primary: #5d092a;
-  --color-primary-dark: #26030f;
+  /* --color-primary: #5d092a;
+  --color-primary-dark: #26030f; */
+  --color-primary: #6C3BAA;
+  --color-primary-dark: #341539;
   --color-burgundy: #3d061b;
   --color-cream: #faf7f2;
   --color-beige: #f3eee7;

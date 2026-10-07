@@ -51,7 +51,7 @@ export const lookbook = [
     id: 5,
     caption: 'Heritage Print',
     alt: 'Man wearing a short sleeve African print shirt',
-    image: img(PHOTO.dashikiMan, 1200),
+    image: img(PHOTO.bossNew, 1200),
     categories: ['Men', 'Contemporary', 'Editorial'],
     span: 'tall',
   },
@@ -90,9 +90,9 @@ export const lookbook = [
   {
     id: 10,
     caption: 'Ankara Wrap',
-    alt: 'Woman wearing a blue and brown sleeveless ankara wrap dress',
-    image: img(PHOTO.blueDressWoman, 1200),
-    categories: ['Women', 'Contemporary'],
+    alt: 'Man wearing white African attire with a red patterned wrapper',
+    image: img(PHOTO.manNewWhite2, 1200),
+    categories: ['Men', 'Editorial', 'Traditional'],
     span: 'tall',
   },
   {
@@ -165,6 +165,14 @@ export const lookbook = [
     alt: 'Couple agbada in traditional attire for a ceremony',
     image: img(PHOTO.agbadaCouple, 1200),
     categories: ['Women', 'Men', 'Ceremonial'],
+    span: 'wide',
+  },
+  {
+    id: 20,
+    caption: 'Fit for a King',
+    alt: 'White feeling',
+    image: img(PHOTO.manNewWhite, 1200),
+    categories: ['Men', 'Ceremonial'],
     span: 'wide',
   },
 ]

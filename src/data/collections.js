@@ -39,7 +39,7 @@ export const collections = [
       'The flowing three-piece agbada, embroidered by hand in the detail and geometry of Nigerian regalia.',
     intro:
       'The agbada is the loudest quiet garment in African menswear. Ours are built on heavyweight brocade with generous drape, so the fabric carries the occasion for you. Available as a two-piece or full three-piece with sokoto.',
-    image: img(PHOTO.heroAgbadaAlt, 1400),
+    image: img(PHOTO.agbadaWhite, 1400),
     featured: true,
     match: (p) => p.category === 'Agbada',
   },

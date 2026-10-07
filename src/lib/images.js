@@ -36,7 +36,7 @@ export const PHOTO = {
   heroAgbadaAlt: 'crownlek_67.webp',
 
   /* Agbada */
-  agbadaWhite: 'crownlek_112.webp',
+  agbadaWhite: 'crownlek_123.webp',
   agbadaEmerald: 'crownlek_86.webp',
   agbadaGold: 'crownlek_75.webp',
   agbadaBlue: 'crownlek_65.webp',
@@ -54,6 +54,7 @@ export const PHOTO = {
   dashikiMan: 'crownlek_74.webp',
   filaMan: 'crownlek_105.webp',
   fatherSon: 'crownlek_71.webp',
+  menWhite: 'crownlek_112.webp',
 
   /* Womenswear */
   laceWoman: 'crownlek_110.webp',
@@ -100,4 +101,9 @@ export const PHOTO = {
   calabarCarnival: 'crownlek_119.webp',
   africanMenWhite: 'crownlek_121.webp',
   africanMenBlue: 'crownlek_122.webp',
+  africanMenRed: 'crownlek_124.webp',
+  manNewWhite: 'crownlek_1.webp',
+  manNewWhite2: 'crownlek_2.webp',
+  bossNew: 'crownlek_3.webp',
+  bossNew2: 'crownlek_6.webp',
 }

@@ -8,7 +8,7 @@ import { cn } from '../../lib/format'
 
 /** Large editorial collection cards with an asymmetric desktop layout. */
 export default function FeaturedCollections() {
-  const collections = getFeaturedCollections(4)
+  const collections = getFeaturedCollections(5)
 
   return (
     <section id="collections" className="scroll-mt-24 bg-cream py-20 sm:py-28 lg:py-32">

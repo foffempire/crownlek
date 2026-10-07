@@ -7,6 +7,8 @@ import Media from '../components/common/Media'
 import SectionTitle from '../components/ui/SectionTitle'
 import Button from '../components/ui/Button'
 import Reveal from '../components/ui/Reveal'
+import VideoStory from '../components/home/VideoStory'
+import myVideo from '../assets/videos/crownlek_style.mp4'
 
 const TEAM = [
   {
@@ -50,6 +52,9 @@ export default function About() {
         }
         description="We began in a single Lagos workshop with three tailors and a stack of brocade. Two decades later the standard has not moved: every piece is cut, embroidered and finished by hand."
       />
+
+
+      <VideoStory video={myVideo} />
 
       {/* Brand story */}
       <section className="pb-20 sm:pb-28">
